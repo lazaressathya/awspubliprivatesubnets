@@ -1,3 +1,4 @@
+## creating a locals for file
 locals {
   development_env = "development"
 }
