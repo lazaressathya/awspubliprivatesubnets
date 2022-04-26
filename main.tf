@@ -82,6 +82,8 @@ resource "aws_instance" "publicinstance" {
     Name = "${local.development_env}-publicEC2-tag"
   }
 }
+
+## creating a security group
 resource "aws_security_group" "publicsg" {
 vpc_id      = "${aws_vpc.my_vpc.id}"
 # Inbound Rules
